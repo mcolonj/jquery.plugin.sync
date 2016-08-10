@@ -20,6 +20,8 @@ Your tag will look similar to this:
 ```
 The above tag will run an animation as soon as the movie starts.
 
+## Script tag, plugin initialization.
+
 Then lower down in your html add a script tag that looks similar to:
 ```
 <script>
@@ -30,6 +32,8 @@ $(document).ready(function() {
 ```
 
 That is it! Make sure your html tags set for animation have an id attribute. The plugin uses it during animation.
+
+## An outmation & outframe
 
 You also have the option of using an out animation or an outmation and an outframe.
 
