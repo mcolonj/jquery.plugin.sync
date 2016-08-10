@@ -7,24 +7,20 @@ Requires: jquery.js and animate.css.
 ## In action
 ![alt tag](https://raw.githubusercontent.com/mcolonj/ui/master/jquery-plugin.gif)
 
-Simply add 'sync' to the class attribute. This tells the plugin that the tag will be animated.
-
-Then add an two attributes to your tag.
+Simply add 'sync' to the class attribute. This tells the plugin that the tag will be animated. Then add two attributes to your tag.
 ```
 animation='' keyframe=''
 ```
-animation=one of animate.css animations.
-keyframe=[integer between 1-total_frames].
+animation=[from animate.css]
+keyframe=[integer between 1-total_frames]
 
-A tag will look similar to this:
-
+Your tag will look similar to this:
 ```
 <p id='a1' class='sync' animation='bounceIn' keyframe='1'></p>
 ```
 The above tag will run an animation as soon as the movie starts.
 
-Then lower down in your html include a script tag that looks similar to:
-
+Then lower down in your html add a script tag that looks similar to:
 ```
 <script>
 $(document).ready(function() {
@@ -33,11 +29,11 @@ $(document).ready(function() {
 </script>
 ```
 
-That is it. Make sure your html tags with the sync class also have an id. The plugin uses the tags id attribute during animation.
+That is it! Make sure your html tags set for animation have an id attribute. The plugin uses it during animation.
 
+You also have the option of using an out animation or an outmation and an outframe.
 
-There is also the option of using an out animation or an outmation that is given an outframe for it's disappearence. It looks like this:
-
+Your tag will look similar to this:
 ```
 <p id='a1' class='sync' animation='bounceIn' keyframe='3' outmation='fadeOut' outframe='25'></p>
 ```
