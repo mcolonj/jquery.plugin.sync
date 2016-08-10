@@ -2,9 +2,9 @@
 
 Plugin that animates html in sync to a movie file.
 
-Requires: jquery.js and animate.css.
+Requires: jquery.js, animate.css and HTML5.
 
-## In action
+## In action - HTML5
 ![alt tag](https://raw.githubusercontent.com/mcolonj/ui/master/jquery-plugin.gif)
 
 Simply add 'sync' to the class attribute. This tells the plugin that the tag will be animated. Then add two attributes to your tag.
