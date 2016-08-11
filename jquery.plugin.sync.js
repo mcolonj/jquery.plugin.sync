@@ -23,10 +23,10 @@
       dev : 0,
     }, options);
 
-    (undefined === (video = settings.video)) ? function() {
+    (undefined === settings.video) ? function() {
       console.log('Video property is required');
     }() : function() {
-      $video = $(video);
+      $video = $(settings.video);
       var transitions = {};
       var outmations = {};
       var frames = [];
