@@ -26,7 +26,6 @@
     (undefined === (video = settings.video)) ? function() {
       console.log('Video property is required');
     }() : function() {
-      console.log('got here');
       $video = $(video);
       var transitions = {};
       var outmations = {};
@@ -34,7 +33,6 @@
       var frame = 0;
       var mytimer = null;
       settings.elem.each(function(index, section) {
-        console.log('section');
         $section = $(section);
         transitions[$section.attr('keyframe')] = {id:$section.attr('id'), animation:$section.attr('animation')};
         if ($section.attr('outframe')) {
@@ -43,7 +41,6 @@
       });
 
       $video.get(0).addEventListener('play', function() {
-        console.log('got play event');
         mytimer = setInterval(function(){
           if ($video.get(0).paused || $video.get(0).ended) return;
           $counter = $('#counter');
@@ -53,7 +50,6 @@
           } else {
             $counter.hide();
           }
-          console.log(key);
           if (key in transitions) runAnimationForKey(transitions[key], false);
           if (key in outmations) runAnimationForKey(outmations[key], true);
           frame++;
